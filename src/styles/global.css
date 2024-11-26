@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url('/fonts/quicksand/Quicksand-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.hover-effect:hover {
+    color: rgb(51, 51, 51);
+    background-color: rgb(70, 166, 255);
+    transition: color 0.3s, background-color 0.3s, ;
+    border-radius: 8px;
+}
