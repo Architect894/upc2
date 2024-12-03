@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
     font-family: 'Quicksand';
     src: url('/fonts/quicksand/Quicksand-Regular.otf') format('truetype');
@@ -6,8 +10,35 @@
 }
 
 .hover-effect:hover {
-    color: rgb(51, 51, 51);
+    color: rgb(194, 253, 209);
     background-color: rgb(70, 166, 255);
     transition: color 0.3s, background-color 0.3s, ;
-    border-radius: 8px;
+    border-radius: 80px;
+
+}
+
+.custom-bg-opacity {
+    background-color: rgba(0, 153, 255, 0.158); /* Darker blue with 50% opacity */
+    padding: 4px; /* Optional padding */
+    border-radius: 20px; /* Optional rounded corners */
+
+}
+
+.custom-bg {
+    background-color: rgba(0, 21, 36, 0.788);
+    padding: 30px;
+    border-radius: 10px;
+
+}
+
+.custom-bg-buttons {
+    padding: 2px; 
+    color: rgb(124, 242, 250);
+    border-radius: 80px;
+}
+
+.custombg {
+    background-color: rgba(0, 21, 36, 0.788);
+    padding: 30px;
+    border-radius: 10px; ;
 }

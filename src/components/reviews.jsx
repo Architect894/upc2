@@ -6,15 +6,13 @@ import styles from '../styles/styles.module.css';
 export default function Reviews() {
     // Styles for the header
     const headerStyle = {
-        backgroundColor: 'red', // Using Bootstrap's secondary color variable for consistency
         color: 'white',
-        padding: '10px', // Adjust padding as needed
-        border: 'solid black 2px',
+        padding: '10%', // Adjust padding as needed
         borderRadius: '25px', // For rounded corners
         display: 'inline-block', // To center the background with the text
         textAlign: 'center', // Center text within the header
         width: '100%', // Ensure full width
-        fontFamily: 'Arial'
+        fontFamily: 'Quicksand'
     };
 
     // Styles for paragraphs

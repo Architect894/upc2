@@ -6,10 +6,8 @@ import styles from '../styles/styles.module.css';
 export default function ContactUs() {
     // Styles for the header
     const headerStyle = {
-        backgroundColor: 'var(--bs-dark)', // Using Bootstrap's secondary color variable for consistency
         color: 'white',
-        padding: '10px', // Adjust padding as needed
-        border: 'solid black 2px',
+        padding: '10%', // Adjust padding as needed
         borderRadius: '25px', // For rounded corners
         display: 'inline-block', // To center the background with the text
         textAlign: 'center', // Center text within the header
@@ -32,10 +30,10 @@ export default function ContactUs() {
             <div className="container">
                 <h2 style={headerStyle} className="mb-1 display-3">Contact Us</h2>
                 <p style={paragraphStyle} className="mb-3 lead text-white">
-                    Our number is 1-800-FUK-USLF
+                    Call us anytime!
                 </p>
                 <p style={paragraphStyle} className="mb-3 lead text-white">
-                    Tell you hwhat and I aint gonna tell you again, talk shit to fuck@shitdammit.com
+                    Tell you hwhat and I aint gonna tell you again, talk to ya bois
                 </p>
             </div>
         </section>
