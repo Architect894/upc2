@@ -52,6 +52,7 @@ export default function WorkWithUs() {
                 height: '70vh', // Limit the height to crop the video
                 overflow: 'hidden', // Hide any part of the video that overflows
                 position: 'relative',
+                marginTop: "23%"
             }}
         >
             {/* Background Video */}
@@ -63,7 +64,7 @@ export default function WorkWithUs() {
                     objectPosition: 'center top', // Crop the video to focus on the top part
                     zIndex: -1, // Ensure the video stays behind content
                 }}
-                src="/upcmain.mp4" // Path to your video file
+                src="/services.mp4" // Path to your video file
                 autoPlay
                 loop
                 muted

@@ -1,11 +1,10 @@
 import localFont from "next/font/local";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Ourstory from "@/components/ourstory";
 import Services from "@/components/services";
-import Reviews from "@/components/reviews"
-import ContactUs from "@/components/contactus"
-import UnitedLogo from "@/components/unitedLogo"
+import Reviews from "@/components/reviews";
+import ContactUs from "@/components/contactus";
 import DropMenu from "@/components/dropMenu";
+
 
 export const metadata = {
   title: "Create Next App",
@@ -17,11 +16,9 @@ export default function RootLayout({ children }) {
     <html lang="en" data-bs-theme="dark">
       <body>
         {children}
-        <Ourstory />
         <Services />
         <Reviews />
         <ContactUs />
-        <UnitedLogo />
         <DropMenu />
       </body>
     </html>

@@ -7,7 +7,7 @@ import Link from 'next/link'; // Import Link from Next.js
 
 export default function Home() {
     const [opacity, setOpacity] = useState(1); // Start with full opacity
-    const [scrollY, setScrollY] = useState(0); // Track the scroll position
+    const [scrollY, setScrollY] = useState(1); // Track the scroll position
 
     useEffect(() => {
         const handleScroll = () => {
@@ -59,7 +59,7 @@ export default function Home() {
                                     objectFit: 'cover',
                                     zIndex: -1, // Ensure it stays behind the content
                                 }}
-                                src="/upcmain.mp4" // Path to your video file
+                                src="/Nologo.mp4" // Path to your video file
                                 autoPlay
                                 loop
                                 muted
