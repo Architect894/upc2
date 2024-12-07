@@ -41,15 +41,17 @@ export default function DropMenu() {
     return (
         <div
             ref={menuRef}
-            className={`${isSticky ? "fixed top-0 left-0 w-100" : "absolute left-0 w-100"}`}
+            className={`${isSticky ? "fixed top-0 left-1/2 transform -translate-x-1/2 w-50" : "absolute left-1/2 transform -translate-x-1/2 top-0 w-50"}`}
+
             style={{
                 zIndex: 9999,
-                backgroundColor: "rgba(0, 125, 2500, 0.5)",
-                borderRadius: "10px",
-                boxShadow: "0 4px 15px rgba(2, 15, 82, 0.8)",
-                paddingTop: "5%",
+                backgroundColor: "rgba(850, 850, 2500, 0.8)",
+                borderRadius: "15px",
+                boxShadow: "0 4px 15px rgba(0, 0, 0, 0.8)",
                 top: isSticky ? "0" : `${originalOffsetTop.current}px`, // Reset to original position
                 transition: "top 0.3s ease",
+                fontFamily: "Quicksand",
+                marginTop: "10px"
             }}
         >
             <div className="container-fluid d-flex justify-content-between align-items-center">
@@ -57,12 +59,12 @@ export default function DropMenu() {
                 <div>
                     <button
                         type="button"
-                        className="inline-flex items-center gap-x-1 text-sm font-semibold text-white px-4 py-2 rounded-lg shadow-md transition-all duration-300"
+                        className="inline-flex items-center gap-x-3 text-lg font-bold text-black px-2 py-2 rounded-lg shadow-lg transition-all duration-100"
                         style={{
                             backgroundColor: "transparent",
                         }}
                         onMouseEnter={(e) => {
-                            e.currentTarget.style.backgroundColor = "rgba(520, 10, 0, 0.8)";
+                            e.currentTarget.style.backgroundColor = "rgba(520, 10, 0, 0.5)";
                         }}
                         onMouseLeave={(e) => {
                             e.currentTarget.style.backgroundColor = "transparent";
@@ -70,9 +72,9 @@ export default function DropMenu() {
                         onClick={toggleFlyout}
                         aria-expanded={flyoutOpen}
                     >
-                        <span>Solutions</span>
+                        <span>Menu</span>
                         <svg
-                            className="w-5 h-5"
+                            className="w-10 h-8"
                             viewBox="0 0 20 20"
                             fill="currentColor"
                             aria-hidden="true"
@@ -90,31 +92,32 @@ export default function DropMenu() {
                             className="absolute"
                             style={{
                                 marginTop: "1px",
-                                width: "200px",
-                                backgroundColor: "rgba(0, 150, 250, 0.4)",
+                                width: "140px",
+                                backgroundColor: "rgba(500, 500, 250, 0.4)",
                                 borderRadius: "10px",
                                 boxShadow: "0 4px 15px rgba(0, 0, 0, 0.8)",
                                 padding: "1rem",
-                                backdropFilter: "blur(10px)",
+                                backdropFilter: "blur(5px)",
                                 WebkitBackdropFilter: "blur(10px)",
+                                color: "black",
                             }}
                         >
-                            <Link href="#" className="block p-2 hover:text-red-300">
+                            <Link href="#" className="block p-2 font-bold hover:text-red-300">
                                 Analytics
                             </Link>
-                            <Link href="#" className="block p-2 hover:text-red-300">
+                            <Link href="#" className="block p-2 font-bold hover:text-red-300">
                                 Engagement
                             </Link>
-                            <Link href="#" className="block p-2 hover:text-red-300">
+                            <Link href="#" className="block p-2 font-bold hover:text-red-300">
                                 Security
                             </Link>
-                            <Link href="#" className="block p-2 hover:text-red-300">
+                            <Link href="#" className="block p-2 font-bold hover:text-red-300">
                                 Integrations
                             </Link>
-                            <Link href="#" className="block p-2 hover:text-red-300">
+                            <Link href="#" className="block p-2 font-bold hover:text-red-300">
                                 Automations
                             </Link>
-                            <Link href="#" className="block p-2 hover:text-red-300">
+                            <Link href="#" className="block p-2 font-bold hover:text-red-300">
                                 Reports
                             </Link>
                         </div>
@@ -125,12 +128,12 @@ export default function DropMenu() {
                 <div>
                     <button
                         type="button"
-                        className="inline-flex items-center gap-x-1 text-sm font-semibold text-white px-4 py-2 rounded-lg shadow-md transition-all duration-300"
+                        className="inline-flex items-center gap-x-3 text-lg font-semibold text-black px-2 py-2 rounded-lg shadow-md transition-all duration-300"
                         style={{
                             backgroundColor: "transparent",
                         }}
                         onMouseEnter={(e) => {
-                            e.currentTarget.style.backgroundColor = "rgba(520, 10, 0, 0.8)";
+                            e.currentTarget.style.backgroundColor = "rgba(520, 10, 0, 0.5)";
                         }}
                         onMouseLeave={(e) => {
                             e.currentTarget.style.backgroundColor = "transparent";
@@ -140,7 +143,7 @@ export default function DropMenu() {
                     >
                         <span>Login</span>
                         <svg
-                            className="w-5 h-5"
+                            className="w-10 h-8"
                             viewBox="0 0 20 20"
                             fill="currentColor"
                             aria-hidden="true"
@@ -159,19 +162,20 @@ export default function DropMenu() {
                             style={{
                                 marginTop: "1px",
                                 width: "200px",
-                                backgroundColor: "rgba(0, 150, 250, 0.4)",
+                                backgroundColor: "rgba(500, 500, 250, 0.4",
                                 borderRadius: "10px",
                                 boxShadow: "0 4px 15px rgba(0, 0, 0, 0.8)",
                                 padding: "1rem",
                                 backdropFilter: "blur(10px)",
                                 WebkitBackdropFilter: "blur(10px)",
+                                color: "black",
                                 right: 0, // Align the dropdown to the left of the button
                             }}
                         >
-                            <Link href="/commercial" className="block p-2 hover:text--red-300">
+                            <Link href="/commercial" className="block p-2 font-bold hover:text-red-300">
                                 Commercial Login
                             </Link>
-                            <Link href="/residential" className="block p-2 hover:text--red-300">
+                            <Link href="/residential" className="block p-2 font-bold hover:text-red-300">
                                 Residential Login
                             </Link>
                         </div>

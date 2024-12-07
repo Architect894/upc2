@@ -35,13 +35,16 @@ const Commercial = () => {
     };
 
     return (
+        
         <section
             id="commercial-portal"
-            className={`container my-5 ${styles.customBg}`} // Add custom background class
+            className='container my-5' // Add custom background class
             style={{
                 borderRadius: '10px',
                 boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)',
                 padding: '30px',
+                
+
             }}
         >
             <h2 className="text-center mb-4">

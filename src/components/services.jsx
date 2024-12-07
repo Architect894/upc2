@@ -61,7 +61,7 @@ export default function WorkWithUs() {
                 style={{
                     height: '100%', // Make the video fill the section height
                     objectFit: 'cover', // Ensures the video scales properly
-                    objectPosition: 'center top', // Crop the video to focus on the top part
+                    objectPosition: 'center ', // Crop the video to focus on the top part
                     zIndex: -1, // Ensure the video stays behind content
                 }}
                 src="/services.mp4" // Path to your video file

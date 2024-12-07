@@ -44,7 +44,7 @@ export default function Home() {
                 <div className="container-fluid p-0">
                     <div className="row no-gutters">
                         <div
-                            className="col-12 position-relative"
+                            className="col-12 position-absolute"
                             style={{ height: '300px' }} // Adjust height for header
                         >
                             {/* Background Video */}
@@ -53,13 +53,14 @@ export default function Home() {
                                 style={{
                                     position: 'absolute',
                                     top: 0,
-                                    left: 0,
-                                    width: '100%',
-                                    height: '180%',
+                                    left: '10%',
+                                    width: '80%',
+                                    height: '100%',
                                     objectFit: 'cover',
+                                    borderRadius: '6px',
                                     zIndex: -1, // Ensure it stays behind the content
                                 }}
-                                src="/Nologo.mp4" // Path to your video file
+                                src="/nologo.mp4" // Path to your video file
                                 autoPlay
                                 loop
                                 muted

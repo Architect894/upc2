@@ -4,7 +4,8 @@ import Services from "@/components/services";
 import Reviews from "@/components/reviews";
 import ContactUs from "@/components/contactus";
 import DropMenu from "@/components/dropMenu";
-
+import Commercial from "@/pages/commercial";
+import Residential from "@/pages/residential";
 
 export const metadata = {
   title: "Create Next App",
@@ -20,6 +21,8 @@ export default function RootLayout({ children }) {
         <Reviews />
         <ContactUs />
         <DropMenu />
+        <Commercial />
+        <Residential />
       </body>
     </html>
   );
